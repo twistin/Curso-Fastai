@@ -1,0 +1,33 @@
+conda create -n fastai python=3.7
+
+conda env list
+
+conda activate fastai
+
+conda install git
+
+https://pytorch.org/
+conda install pytorch torchvision cpuonly -c pytorch
+
+https://anaconda.org/fastai/fastai
+conda install -c fastai fastai
+
+https://docs.fast.ai/install.html
+conda install jupyter notebook
+
+conda install -c conda-forge jupyter_contrib_nbextensions
+
+*conda install nb_conda
+
+python -m ipykernel install --user --name fastai --display-name "fastai env"
+
+jupyter notebook
+
+
+Configurar entorno de conda en pycharm
+ * Ir a File-->Settings
+ * Project: <name of project>-->Project Interpreter
+ * Darle a la rueda de configuracion-->Add
+ * Existing environment-->Interpreter
+ * En mi caso añadir la ruta "C:\Users\mfnunez\AppData\Local\Continuum\anaconda3\envs\fastai\python.exe"
+ * Marcar "Make available to all projects"
