@@ -1,0 +1,13 @@
+#!/bin/bash
+if [ ! -e /content/models ]; then			# Si no existe la ruta /content/models
+        mkdir -p /root/.torch/models		# Crear el la carpeta /root/.torch/models y la carpeta /root/.fastai/data
+        mkdir -p /root/.fastai/data
+        ln -s /root/.torch/models /content	# Se crea el link a /root/.torch/models y la carpeta /root/.fastai/data en el directorio /content
+        ln -s /root/.fastai/data /content
+        rm -rf /content/sample_data/		# Se elinina de /content la carpeta sample data
+fi
+
+echo Updating fastai...
+pip install fastai --upgrade > /dev/null	# Se actualiza fastai
+
+echo Done.
