@@ -1,3 +1,6 @@
 
 *.pkl
 *.mp4
+*.xml
+*.iml
+*.pth
